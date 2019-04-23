@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Bootstrap Livesteam Codecademy</title>
+  </head>
+  <body>
+    <!-- lg represents a break point and lg is for large screens -->
+    <!--- A component is something that has premade styling and does something for us -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <a class="navbar-brand" href="#">Boots N Straps</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Boots</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Types Of Straps
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Nylon</a>
+            <a class="dropdown-item" href="#">Rope</a>
+            <div class="dropdown-divider">Buckles</div>
+            <a class="dropdown-item" href="#">Bootstrap</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+    <!-- End of Navbar component -->
+    <!-- The data-target targets an element with the id of collapseExample(I think it's an id because of the #)
+		-->
+    <button type="button" class="btn btn-link mx-auto d-block" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Thanks for chiming!
+    </button>
+    <div class="collapse text-center" id="collapseExample" >
+      <!-- To style this text below to make it centered, 					we can use a utility class -->
+      Glad to have you here!
+    </div>
+    <!-- Bootstrap grids uses Flexbox. It has a container, which has a row, which has columns. There's also a fancier way that has columns that contain rows too. -->
+    <div class="container">
+      <!-- Jumbo Row -->
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron" style="background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/mock+website+assets/boots_jumbotron.jpg'); background-repeat: no-repeat; background-size: cover;
+">
+            <div class="px-3 h-100 text-white" style="background-color: rgba(0,0,0, 0.4); overflow: auto">
+              <h1>Boots are GREAT(in Tony The Tiger's  									voice)</h1>
+              <p>Especially cowboy boots.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Jumbo Row -->
+
+      <!-- Card row -->
+      <!-- Card are components that are used to showcase information	-->
+      <!-- For Bootsrap, each row in the flexbox grid can fit up to 12 columns (it does some auto adjust stuff). When we put col-sm-4, it means that for screens that meet the small screen size breakpoint(if the screen is at least the size of a small screen), then the column will take up one third of the row(because the 4 is equal one third of the row) -->
+      <div class="row">
+        <div class="col-12 col-sm-4">
+          <!-- Card 1: -->
+          <div class="card">
+            <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/mock+website+assets/old+boots.jpg" class="card-img-top" alt="Old boots">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example    text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go    							somewhere</a>
+            </div>
+          </div>
+          <!-- End of Card -->
+        </div>
+        <div class="col-12 col-sm-4">
+          <!-- Card 2 -->
+          <div class="card">
+            <img 							src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/mock+website+assets/straps.jpg" class="card-img-top" alt="Old boots">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example    text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go    							somewhere</a>
+            </div>
+          </div>
+          <!-- End of Card 2 -->
+        </div>
+        <div class="col-12 col-sm-4">
+          <!-- Card 3 -->
+          <div class="card">
+            <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/mock+website+assets/Bootstrap+in+CE.png" class="card-img-top" alt="Old boots">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example    text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go    							somewhere</a>
+            </div>
+          </div>
+          <!-- End of Card 3 -->
+        </div>
+      </div>
+      <!--End of Cards -->
+      <br><!-- Adds spacing in between elements -->
+      <!-- Carousel -->
+      <div class="row">
+        <div class="col">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/mock+website+assets/boots+on+mountain.jpg" class="d-block w-100" 										alt="Boots on mountain">
+              </div>
+              <div class="carousel-item">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/mock+website+assets/bookbag.jpg" class="d-block w-100" 										alt="Book Bag">
+              </div>
+              <div class="carousel-item">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-components/mock+website+assets/boots+on+stone.jpg" class="d-block w-100" 											alt="Boots on stone">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+					</div>
+        </div>
+      </div>
+      <!-- End of Carousel -->
+
+      <!-- Start of nav component -->
+      <div class="row">
+        <div class="col mx-auto d-block">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <!-- End of Nav component -->
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
